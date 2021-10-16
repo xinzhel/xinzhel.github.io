@@ -1,49 +1,38 @@
 ---
 layout: page
-title: About
+title: How do I become a ML and NLP research/engineer?
 permalink: /about/
 ---
 
-<!-- This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+我本科学的是旅游和酒店管理，直接相关的课程确实很少，大学本科我只有一门统计学课，从商科的角度更多关注是做survey，sampling等比较实践性的东西。有趣的是，像分布，概率这些东西似乎在这个课上并没涉及太多。不过我另外选修的心理测量课上倒是用过不少。无论如何，不论从工程角度还是数学相关的理论角度，我本科的学习并没有带给我有关工程和理论上的任何直接知识。举例来说，平均数对于我来说也许就是数字相加除以个数而已（而不能联想到期望值，权重，bias等概念）；概率分布只是用来算事件的概率的工具（而不能自然地认知到它是总体/事物本质在概率上的表达，sampling process，通过样本可以进行其参数估计等）。
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+接着，在2017年，因为在滴滴工作时对编程实现一些自动化的报表觉得很有意思，再加上，那会因为大数据的热潮带动了很多相关网课的出现，由此给我自学编程与机器学习提供了极大的方便。所以，便‘入坑了’。I choose to have my master degree of information technology. I have been to Monash University in Australia since it did not require the relevant bachelor degree. Afterwards, I was lucily recommended by  my Monash teacher to Deakin University for my PhD on NLP and ML.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+# Confidence
+碾压重铸我的自尊自信，这一点虽然suffer，but I have to admit that I enjoy this process (even during the painful period). The reason behind this seemingly abnormal metal, I think, is that it makes me feel existence and movement of my life.
 
-
-[jekyll-organization]: https://github.com/jekyll -->
+我本科并不是数学或计算机专业出生。虽然我本人并不认为这会影响我在相关领域的研究，但是不可避免地因此很多专业上的解释会有欠斟酌。
 
 
-
-我本科并不是数学或计算机专业出生。虽然我本人并不认为这会影响我在相关领域的研究，但是不可避免地因此很多专业上的解释会有欠斟酌，所以在此还是做些背景介绍。我本科学的是旅游和酒店管理，直接相关的课程确实很少，大学本科我只有一门统计学课，从商科的角度更多关注是做survey，sampling等比较实践性的东西。有趣的是，像分布，概率这些东西似乎在这个课上并没涉及太多。不过我另外选修的心理测量课上倒是用过不少。无论如何，不论从工程角度还是数学相关的理论角度，我本科的学习并没有带给我有关工程和理论上的任何直接知识。举例来说，平均数对于我来说也许就是数字相加除以个数而已（而不能联想到期望值，权重，bias等概念）；概率分布只是用来算事件的概率的工具（而不能自然地认知到它是总体/事物本质在概率上的表达，sampling process，通过样本可以进行其参数估计等）。
-
-接着，在2017年，因为在滴滴工作时对编程实现一些自动化的报表觉得很有意思，再加上，那会因为大数据的热潮带动了很多相关网课的出现，由此给我自学编程与机器学习提供了极大的方便。所以，便‘入坑了’。而且到澳洲来读了个IT的硕士学位（因为澳洲不受本科的限制）。
-
-If you would like to know more, see [Linkedin Profile](https://www.linkedin.com/in/xinzhe-li-b04639166/).
-
-
-"About myself as a Machine Learning PhD"
-# Strategies
+# Make my own decision
+ "Don't waste it living someone else's life." -- 
+ If you donot make your own decision, someone else may use their experience to make your decision. If you are unlucky, different supervisors will make you into unconsistent work. More importantly, you would become more likely to deny the decision since it is not you that make the decision.
+ 
+# What I am working? Engineering vs Research
 * Learning abstract theories is time-consuming. So is the study of the practical domain. I found the challenging domains in the Natural Language Processing to apply the abstract theories.
-* 不断锤炼，使之圆融
+
 
 # What I am working for?
-"Using no way as way; having no limitation as limitation." 
+"Using no way as way; having no limitation as limitation."  --- Bruce Lee
 
 
 The following points are more of findings of myself rather than principles for my actions. Also, these points are not only for my research work but also for my point of views for my entire life.
 
 * Passion: I do not think there exists anything else which is more important than my passion. Because passion in the moment would support my pursuit to the perfect and meaningful work in contrast to ["bullshit jobs"](https://en.wikipedia.org/wiki/Bullshit_Jobs). 
+
+* Work without passion (now): I have no passion for capital/paper publishment at the beginning. But I did realize that I have my responsibility for my supervisor and university who support me since the day I accepted the support. Therefore, after figuing out the minimum expectations from my funders, I would plan to complete these tasks as derivations of my mainstream tree rooted in my real passion. This not only makes myself happy to do the thing I want, but also let me do my "perfect" job.
+
 * Ecosystem and in order: Some experience of other researchers prove that sometimes just following rigid principles would work for some particular scenarios, e.g., applying their base work in blockchain into distributed machine learning. IMPORTANT: I do not think that the way of doning these works is not good. So far, I cannot adapt to this way.  For example, I love to study the mathematical principles which are able to explain why this modelling algorithm works. This is always the part other people would misunderstand me in a way that I would like to explore more theoretical stuff. The truth is that I just cannot handle my life, my knowledge in a messy way. I would feel frustrated and lost, lose my passion and cause much negative emotion. In contrast, having the thing organized and unified make me feel satisfied and happy.
-
-# How to deal with capital/paper pulishments?
-For the fundings/paper publishments, I have no passion for these, but I did realize that I have my responsibility for my supervisor and university who support me since the day I accepted the support. Therefore, after figuing out the minimum expectations from my funders, I would plan to complete these tasks as derivations of my mainstream tree rooted in my real passion. This not only makes myself happy to do the thing I want, but also let me do my "perfect" job.
-
-
 
 
 # Mind-changing
@@ -54,6 +43,7 @@ For the fundings/paper publishments, I have no passion for these, but I did real
 I wanna put this saying at the beginning because it cautions myself not only to expand the knowledge during the self-study but also to respect and take seriously to opinions of other academic members even though I feel embarrassed for some criticisms. I stress this because most researchers (especially senior researchers) may express their criticism in a intellectually superior manner. To be honest, whenever I get criticized like that, I feel frustrated, embarrassed and refuse to face the bleak life. However, I do realize the benefits from most of these cold criticism if I can analyze them objectively and take action on my deficiency, such as why I fail getting feedback from my report in group meeting, although I prepare a thorough analysis. Besides, a lot of following suggestions are summarized from criticisms from my peers and the respectful senior. I hate them when I hear these criticisms, but I love them so much when I grow myself because of these.
 
 ## Allow the knowlege gap in our knowledge structure
+"You can't connect the dots looking forward; you can only connect them looking backwards." --- Steve Jobs
 一般选择做研究的人一定会有很旺盛的刨根究底的欲望。这是一把双刃剑，也许它能在一定时间段让你获得更多的认可，但也许他会耽误你这一辈子都做不出被认可的东西。一般的人的社会属性没有完全被长期的求知欲压倒时，一定会在某个时刻做出妥协。所以这算不算是问题完全因人而异。本着我自己既不想在求知欲旺盛的时候被研究计划所干扰，又不想被周围的导师和同侪认为我一事无成。以下是我自己的解决方案
 1. weekly report:这就相当于一个止损点
 2. 在扩展到不是直接相关的knowledge的时候，think whether this could be the solution or any relation to your research questions. This is not only efficient for my research but also help me understand new knowledge.
