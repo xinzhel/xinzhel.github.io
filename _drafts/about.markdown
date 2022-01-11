@@ -36,6 +36,8 @@ The following points are more of findings of myself rather than principles for m
 
 
 # Mind-changing
+PhD的心路历程中，逐渐脱离过去对学术，对项目，对人与社会，对知识的认知，甚至在过去都没有意识去形成对人与社会的认知，这种变化体现在对艺术作品的解读逐渐从不求甚解的引用别人的解读，记不住就语无伦次的境地逐渐会用自己的阅历来做出自己的解读，并对别人的解读做出自己的判断；对在生活中在研究中需要决策时，能不再瞻前顾后，患得患失；对知识的追求不在是为了获得一时的新鲜毫无目的为自己大脑添加看起来可口却无序的，无法从物理实验中探寻也无法逻辑自洽的知识；也不再总是以一种难以衡量的虚无完美主义评价自己，对自己已有的成果不假思索的否定（这既是因为追求的过于虚无缥缈，也是没有看清现实的成果大多没有牛顿一二三定律那样影响深远，更是因为自己懒地理性思考，更更是因为总是习惯于学习被人总结的已有的知识但缺乏自己的对知识的重构。）
+
 ## Take criticisms seriously
 
 "Unless you try to do something beyond what you have already mastered, you will never grow." --- Ralph Waldo Emerson
