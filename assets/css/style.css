@@ -132,7 +132,7 @@ h2 { font-size: 1.25rem; color: var(--accent); margin: 0 0 0.8rem; }
 
 /* Publications */
 .pub-note { color: var(--muted); margin: 0 0 0.8rem; font-size: 0.9rem; }
-.pub-list { padding-left: 1.2rem; margin: 0; }
+.pub-list { list-style: none; padding-left: 0; margin: 0; }
 .pub-list li { margin-bottom: 1rem; }
 .pub-title { display: block; font-weight: 600; }
 .pub-venue {
