@@ -228,3 +228,7 @@ h2 { font-size: 1.25rem; color: var(--accent); margin: 0 0 0.8rem; }
 @media (max-width: 720px) {
   .teach-date { width: auto; min-width: 0; }
 }
+
+/* Publication authors */
+.pub-authors { display: block; font-size: 0.9rem; color: var(--muted); margin: 0.1rem 0; }
+.pub-authors strong { color: var(--text); }
