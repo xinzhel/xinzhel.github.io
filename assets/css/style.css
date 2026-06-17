@@ -232,3 +232,7 @@ h2 { font-size: 1.25rem; color: var(--accent); margin: 0 0 0.8rem; }
 /* Publication authors */
 .pub-authors { display: block; font-size: 0.9rem; color: var(--muted); margin: 0.1rem 0; }
 .pub-authors strong { color: var(--text); }
+
+/* Nested research sub-bullets */
+.research-list > li > ul { margin: 0.4rem 0 0; padding-left: 1.1rem; }
+.research-list > li > ul > li { margin-bottom: 0.4rem; }

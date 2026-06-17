@@ -46,18 +46,20 @@
     <section id="research" aria-labelledby="research-h">
       <h2 id="research-h">Research Interests</h2>
       <ul class="research-list">
-        <li><strong>LLM multi-trajectory reasoning.</strong> A unified abstraction of
-          policy, transition, and reward models spanning tree search and other
-          multi-trajectory inference methods for test-time reasoning.</li>
-        <li><strong>Adaptive branching.</strong> Deciding <em>when</em> to branch during
-          search rather than expanding at every step, substantially reducing compute with
-          little or no loss in accuracy.</li>
-        <li><strong>Cross-trajectory agent memory.</strong> Transferring useful knowledge
-          across reasoning attempts for tool-use agents, organized along the scope of
-          transfer and the abstraction of content.</li>
-        <li><strong>Closing the loop between inference and learning.</strong> Using
-          search-generated trajectories to improve the underlying policy, and obtaining
-          reliable reward signals without human annotation.</li>
+        <li><strong>Inference-time multi-trajectory reasoning.</strong> How LLMs explore and
+          aggregate multiple reasoning paths at test time — including tree search — while
+          maintaining both effectiveness and efficiency.
+          <ul>
+            <li><strong>Adaptive branching.</strong> Deciding <em>when</em> to branch
+              during search rather than expanding at every step, substantially reducing
+              compute with little or no loss in accuracy.</li>
+            <li><strong>Cross-trajectory agent memory.</strong> Transferring useful
+              knowledge across reasoning attempts for tool-use agents, organized along the
+              scope of transfer and the abstraction of content.</li>
+          </ul>
+        </li>
+        <li><strong>Training-time: closing the loop between inference and learning.</strong> Folding
+          search- and memory-generated trajectories back into training. <em>(emerging direction)</em></li>
       </ul>
     </section>
 
