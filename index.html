@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xinzhe Li</title>
+  <meta name="description" content="Xinzhe Li — Postdoctoral Research Fellow at RMIT University. LLM reasoning and planning via tree search, and cross-trajectory agent memory.">
+  <meta name="author" content="Xinzhe Li">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a class="nav-brand" href="#top">Xinzhe Li</a>
+      <ul class="nav-links">
+        <li><a href="#research">Research</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="#service">Service</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-name">
+      <h1 id="hero-name">Xinzhe Li</h1>
+      <p class="hero-role">Postdoctoral Research Fellow, RMIT University</p>
+      <p class="hero-bio">
+        I am a Postdoctoral Research Fellow at RMIT University and hold a PhD in
+        Information Technology from Deakin University. My research focuses on
+        large language model (LLM) reasoning and planning via tree-structured search,
+        and adaptive cross-trajectory agent memory, with first-author publications at
+        ACL, TMLR, COLING, and IJCAI.
+      </p>
+      <ul class="hero-links" aria-label="Profiles">
+        <li><a href="https://scholar.google.com.au/citations?user=GzoezEUAAAAJ&hl=en">Google Scholar</a></li>
+        <li><a href="https://github.com/xinzhel">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/xinzhe-li-b04639166/">LinkedIn</a></li>
+        <li><a href="mailto:sergioli212@outlook.com">Email</a></li>
+      </ul>
+    </section>
+
+    <section id="research" aria-labelledby="research-h">
+      <h2 id="research-h">Research Interests</h2>
+      <ul class="research-list">
+        <li><strong>LLM tree search.</strong> A unified abstraction of policy, transition,
+          and reward models for inference-time reasoning across language-grounded,
+          tool-use, and environment-grounded tasks.</li>
+        <li><strong>Adaptive branching.</strong> Deciding <em>when</em> to branch during
+          search rather than expanding at every step, substantially reducing compute with
+          little or no loss in accuracy.</li>
+        <li><strong>Cross-trajectory agent memory.</strong> Transferring useful knowledge
+          across reasoning attempts for tool-use agents, organized along the scope of
+          transfer and the abstraction of content.</li>
+        <li><strong>Closing the loop between inference and learning.</strong> Using
+          search-generated trajectories to improve the underlying policy, and obtaining
+          reliable reward signals without human annotation.</li>
+      </ul>
+    </section>
+
+    <section id="news" aria-labelledby="news-h">
+      <h2 id="news-h">News</h2>
+      <ul class="news-list">
+        <li><span class="news-date">2026</span> Two papers accepted at ACL 2026: <em>LiTS</em> (Demo) and <em>Chain-in-Tree</em> (Findings).</li>
+        <li><span class="news-date">2025</span> Joined RMIT University as a Postdoctoral Research Fellow; completed PhD at Deakin University.</li>
+        <li><span class="news-date">2025</span> Survey on LLM test-time compute via search accepted at TMLR; review of LLM-based agent paradigms at COLING.</li>
+      </ul>
+    </section>
+
+    <section id="publications" aria-labelledby="pub-h">
+      <h2 id="pub-h">Publications</h2>
+      <p class="pub-note">All as first author.</p>
+      <ol class="pub-list">
+        <li>
+          <span class="pub-title">When Does Memory Help Multi-Trajectory Inference for Tool-Use LLM Agents?</span>
+          <span class="pub-venue badge-review">Under review, EMNLP 2026</span>
+          <span class="pub-links"><a href="https://arxiv.org/abs/2605.28224">arXiv</a> · <a href="https://github.com/xinzhel/lits-llm">code</a></span>
+        </li>
+        <li>
+          <span class="pub-title">LiTS: A Modular Framework for LLM Tree Search</span>
+          <span class="pub-venue">ACL Demo 2026</span>
+          <span class="pub-links"><a href="https://arxiv.org/abs/2603.00631">arXiv</a> · <a href="https://github.com/xinzhel/lits-llm">code</a></span>
+        </li>
+        <li>
+          <span class="pub-title">Chain-in-Tree: Back to Sequential Reasoning in LLM Tree Search</span>
+          <span class="pub-venue">ACL 2026 Findings</span>
+          <span class="pub-links"><a href="https://arxiv.org/abs/2509.25835">arXiv</a> · <a href="https://github.com/xinzhel/chain_in_tree">code</a></span>
+        </li>
+        <li>
+          <span class="pub-title">A Survey on LLM Test-Time Compute via Search: Tasks, LLM Profiling, Search Algorithms, and Relevant Frameworks</span>
+          <span class="pub-venue">TMLR 2025</span>
+          <span class="pub-links"><a href="https://arxiv.org/abs/2501.10069">arXiv</a> · <a href="https://github.com/xinzhel/LLM-Search">code</a></span>
+        </li>
+        <li>
+          <span class="pub-title">A Review of Prominent Paradigms for LLM-Based Agents: Tool Use (Including RAG), Planning, and Feedback Learning</span>
+          <span class="pub-venue">COLING 2025</span>
+          <span class="pub-links"><a href="https://aclanthology.org/2025.coling-main.652/">paper</a> · <a href="https://arxiv.org/abs/2406.05804">arXiv</a> · <a href="https://github.com/xinzhel/LLM-Agent-Survey">code</a></span>
+        </li>
+        <li>
+          <span class="pub-title">A Survey on Out-Of-Distribution Evaluation of Neural NLP Models</span>
+          <span class="pub-venue">IJCAI 2023</span>
+          <span class="pub-links"><a href="https://www.ijcai.org/proceedings/2023/749">paper</a> · <a href="https://arxiv.org/abs/2306.15261">arXiv</a></span>
+        </li>
+        <li>
+          <span class="pub-title">Can Pretrained Language Models Derive Correct Semantics from Corrupt Subwords under Noise?</span>
+          <span class="pub-venue">ACL-SEM 2023</span>
+          <span class="pub-links"><a href="https://arxiv.org/abs/2306.15268">arXiv</a> · <a href="https://github.com/xinzhel/word_corruption">code</a></span>
+        </li>
+        <li>
+          <span class="pub-title">Make Text Unlearnable: Exploiting Effective Patterns to Protect Personal Data</span>
+          <span class="pub-venue">ACL-TrustNLP 2023</span>
+          <span class="pub-links"><a href="https://arxiv.org/abs/2307.00456">arXiv</a> · <a href="https://github.com/xinzhel/unlearnable_texts">code</a></span>
+        </li>
+        <li>
+          <span class="pub-title">Exploring the Vulnerability of Natural Language Processing Models via Universal Adversarial Texts</span>
+          <span class="pub-venue">ALTA 2021</span>
+          <span class="pub-links"><a href="https://aclanthology.org/2021.alta-1.14/">paper</a> · <a href="https://github.com/xinzhel/attack_alta">code</a></span>
+        </li>
+        <li>
+          <span class="pub-title">GRAMMAR: Grounded and Modular Methodology for Assessment of Closed-Domain Retrieval-Augmented Language Model</span>
+          <span class="pub-venue badge-review">Preprint</span>
+          <span class="pub-links"><a href="https://arxiv.org/abs/2404.19232">arXiv</a> · <a href="https://github.com/xinzhel/grammar">code</a></span>
+        </li>
+      </ol>
+    </section>
+
+    <section id="teaching" aria-labelledby="teach-h">
+      <h2 id="teach-h">Teaching</h2>
+      <ul class="teach-list">
+        <li><span class="teach-date">2023–2025</span> SIT720 Machine Learning, Deakin University</li>
+        <li><span class="teach-date">2024</span> SIT744 Deep Learning, Deakin University</li>
+      </ul>
+    </section>
+
+    <section id="service" aria-labelledby="service-h">
+      <h2 id="service-h">Academic Service</h2>
+      <p>Reviewer: NeurIPS (2026), IJCAI (2024, 2025), COLING (2025).</p>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-h">
+      <h2 id="contact-h">Contact</h2>
+      <p>
+        <a href="mailto:sergioli212@outlook.com">sergioli212@outlook.com</a> ·
+        <a href="https://scholar.google.com.au/citations?user=GzoezEUAAAAJ&hl=en">Google Scholar</a> ·
+        <a href="https://github.com/xinzhel">GitHub</a> ·
+        <a href="https://www.linkedin.com/in/xinzhe-li-b04639166/">LinkedIn</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year">2026</span> Xinzhe Li</p>
+  </footer>
+
+  <script src="assets/js/theme.js" defer></script>
+</body>
+</html>

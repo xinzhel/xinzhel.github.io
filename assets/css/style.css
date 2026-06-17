@@ -1,0 +1,171 @@
+:root {
+  --bg: #ffffff;
+  --surface: #f7f8fa;
+  --text: #1c2024;
+  --muted: #5b6470;
+  --accent: #2b4c7e;
+  --accent-soft: #e8eef6;
+  --border: #e2e5ea;
+  --badge-review-bg: #fff4e5;
+  --badge-review-text: #8a5a00;
+  --maxw: 760px;
+}
+
+html[data-theme="dark"] {
+  --bg: #14171a;
+  --surface: #1c2024;
+  --text: #e6e8eb;
+  --muted: #9aa3ad;
+  --accent: #8fb2e0;
+  --accent-soft: #21303f;
+  --border: #2a2f35;
+  --badge-review-bg: #3a2e16;
+  --badge-review-text: #e6b873;
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme="light"]) {
+    --bg: #14171a;
+    --surface: #1c2024;
+    --text: #e6e8eb;
+    --muted: #9aa3ad;
+    --accent: #8fb2e0;
+    --accent-soft: #21303f;
+    --border: #2a2f35;
+    --badge-review-bg: #3a2e16;
+    --badge-review-text: #e6b873;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-size: 17px;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Header / nav */
+.site-header {
+  position: sticky;
+  top: 0;
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: saturate(180%) blur(8px);
+  border-bottom: 1px solid var(--border);
+  z-index: 10;
+}
+.nav {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0.6rem 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.nav-brand { font-weight: 700; color: var(--text); }
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+}
+.nav-links a { color: var(--muted); font-size: 0.92rem; }
+.nav-links a:hover { color: var(--accent); text-decoration: none; }
+.theme-toggle {
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+/* Main layout */
+main {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 1.5rem 1.2rem 3rem;
+}
+section { padding: 1.4rem 0; border-top: 1px solid var(--border); }
+section:first-of-type { border-top: none; }
+h1 { font-size: 2.1rem; margin: 0 0 0.2rem; }
+h2 { font-size: 1.25rem; color: var(--accent); margin: 0 0 0.8rem; }
+
+/* Hero */
+.hero { padding-top: 1.6rem; }
+.hero-role { color: var(--muted); font-size: 1.05rem; margin: 0 0 0.9rem; }
+.hero-bio { margin: 0 0 1rem; }
+.hero-links, .nav-links { list-style: none; }
+.hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1rem;
+  margin: 0;
+  padding: 0;
+}
+.hero-links a { font-weight: 600; }
+
+/* Lists */
+.research-list { padding-left: 1.1rem; margin: 0; }
+.research-list li { margin-bottom: 0.5rem; }
+
+.news-list, .teach-list { list-style: none; padding: 0; margin: 0; }
+.news-list li, .teach-list li { margin-bottom: 0.5rem; }
+.news-date, .teach-date {
+  display: inline-block;
+  min-width: 5.2rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+/* Publications */
+.pub-note { color: var(--muted); margin: 0 0 0.8rem; font-size: 0.9rem; }
+.pub-list { padding-left: 1.2rem; margin: 0; }
+.pub-list li { margin-bottom: 1rem; }
+.pub-title { display: block; font-weight: 600; }
+.pub-venue {
+  display: inline-block;
+  margin: 0.2rem 0;
+  padding: 0.05rem 0.5rem;
+  background: var(--accent-soft);
+  color: var(--accent);
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+.pub-venue.badge-review {
+  background: var(--badge-review-bg);
+  color: var(--badge-review-text);
+}
+.pub-links { display: block; font-size: 0.9rem; color: var(--muted); }
+
+/* Footer */
+.site-footer {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 1.4rem 1.2rem;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+/* Responsive */
+@media (max-width: 720px) {
+  body { font-size: 16px; }
+  .nav { flex-wrap: wrap; }
+  .nav-links { order: 3; width: 100%; }
+  h1 { font-size: 1.8rem; }
+  .news-date, .teach-date { display: block; min-width: 0; }
+}
