@@ -2,7 +2,7 @@
 
 ## Overview
 
-We build a static, single-page academic homepage hosted on GitHub Pages. We choose a
+We build a static bilingual academic homepage hosted on GitHub Pages. We choose a
 **zero-build static site** (hand-authored HTML + one CSS file + minimal JS) over a
 Jekyll template (academicpages / al-folio) because:
 
@@ -20,8 +20,10 @@ publishes the repo files as-is. No application build.
 
 ```
 xinzhel.github.io/                 <- separate GitHub repo (user site)
-├── index.html                     <- single source of truth for all sections
-│                                     (hero, research, news, pubs, teaching, service, contact)
+├── index.html                     <- English page
+├── index.zh.html                  <- Chinese page
+├── data/publications.json         <- shared publication metadata
+├── scripts/render_publications.mjs <- regenerates static publication HTML
 ├── assets/
 │   ├── css/style.css              <- layout, responsive, light/dark
 │   ├── js/theme.js                <- optional: theme toggle, footer year (progressive enhancement)
@@ -33,16 +35,14 @@ xinzhel.github.io/                 <- separate GitHub repo (user site)
 └── README.md                      <- how to edit & deploy
 ```
 
-`index.html` is the single source of truth for publication details — they are written
-directly as static HTML (no separate data file, no JS rendering) so crawlers read them
-directly. `theme.js` is progressive enhancement only — the page is fully usable with JS
-disabled.
-
-Note: an earlier draft kept a `data/publications.json` inventory, but it duplicated the
-hardcoded HTML with no runtime use and created a manual sync burden, so it was removed.
+`data/publications.json` is the source of truth for publication details. The renderer
+script writes those entries into `index.html` and `index.zh.html` as static HTML, so
+crawlers still read the publications directly and the live site does not rely on
+JavaScript-rendered content. `theme.js` is progressive enhancement only — the page is
+fully usable with JS disabled.
 
 ```
-Browser ──GET──▶ GitHub Pages ──serves──▶ index.html + assets/  (no server logic)
+Browser ──GET──▶ GitHub Pages ──serves──▶ HTML pages + assets/  (no server logic)
 ```
 
 ## Build & Deploy Workflow
@@ -73,12 +73,12 @@ Local preview: `python3 -m http.server` from the site root (no build needed).
 - `#news`: short `<ul>` of aggregated highlights (recency window ~2 years, newest first;
   soft cap ~8 lines), e.g., "Sep 2026 — Two papers accepted at ACL 2026". Rolled-up
   signal, not one line per paper; omit the section if nothing falls in the window.
-- `#publications`: ordered list; each `<li>` carries title, author line (with "Xinzhe Li"
-  bolded), venue badge, and paper/arxiv/code links. Written as static HTML so crawlers
-  read it directly. We do NOT add `citation_*` meta tags here: Google Scholar indexes from
-  publishers/arXiv, not personal pages, and those tags only pay off when each paper has
-  its own URL — out of scope for a single page. (Deferred; revisit if we split papers
-  into per-paper pages.)
+- `#publications`: generated static list; each `<li>` carries title, author line (with
+  "Xinzhe Li" bolded), venue badge, and paper/arxiv/code links. Written into the page as
+  static HTML so crawlers read it directly. We do NOT add `citation_*` meta tags here:
+  Google Scholar indexes from publishers/arXiv, not personal pages, and those tags only
+  pay off when each paper has its own URL — out of scope for a single page. (Deferred;
+  revisit if we split papers into per-paper pages.)
 - `#teaching`: courses taught (year range, code/title, institution), e.g.,
   "2023–2025 — SIT720 Machine Learning, Deakin University". Stable list.
 - `#service`: reviewer roles.
@@ -94,11 +94,10 @@ Local preview: `python3 -m http.server` from the site root (no build needed).
 
 ## Data Models
 
-No separate data file. Each publication is authored directly as a static `<li>` in
-`index.html`'s `#publications` list, carrying: title, author line (with `<strong>` around
-"Xinzhe Li"), venue badge, and links (`paper` / `arxiv` / `code`). Under-review and
-preprint items use a distinct badge style. `index.html` is the single source of truth;
-statuses and links are updated in place as papers progress.
+`data/publications.json` carries each publication's title, authors, localized venue/status
+labels, optional badge class, and links (`paper` / `arxiv` / `code`). Under-review and
+preprint items use a distinct badge style. `scripts/render_publications.mjs` regenerates
+the static `<li>` entries inside the publication marker blocks in both language pages.
 
 ### Content inventory (mapped from sources)
 - **Identity/bio**: resume header + cover-letter opening; includes current RMIT role and
@@ -115,18 +114,18 @@ statuses and links are updated in place as papers progress.
 ## Example Usage
 
 Adding a newly accepted paper:
-1. Add a `<li>` to the `#publications` list in `index.html` (title, author line with
-   `<strong>Xinzhe Li</strong>`, venue badge, and `paper`/`arxiv`/`code` links).
-2. Optionally add/refresh one aggregated `#news` highlight (e.g., "Sep 2026 — Two papers
+1. Update the entry in `data/publications.json` (title, authors, venue/status labels,
+   badge class if needed, and `paper`/`arxiv`/`code` links).
+2. Run `node scripts/render_publications.mjs` to regenerate the static publication lists.
+3. Optionally add/refresh one aggregated `#news` highlight (e.g., "Sep 2026 — Two papers
    accepted at ACL 2026"); drop highlights that fall outside the ~2-year window.
-3. Commit and push to `main`; the GitHub Actions workflow deploys within ~1 minute.
-4. Commit and push; live in ~1 minute.
+4. Commit and push to `main`; the GitHub Actions workflow deploys within ~1 minute.
 
 ## Alternatives (deferred)
 
 - **academicpages (Jekyll)**: richer structure (talks, teaching, portfolio, Markdown
   publications) but needs Ruby/Jekyll and a build step. Reconsider if the site grows
-  beyond a single page.
+  beyond the compact bilingual homepage.
 - **Per-paper pages + `citation_*` meta tags**: one URL per paper would let Scholar parse
   each paper's metadata cleanly. Deferred — only worth it if we want Scholar to treat the
   homepage as a citation source, which is rarely how Scholar discovers papers.

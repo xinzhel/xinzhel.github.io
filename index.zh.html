@@ -1,32 +1,32 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="zh-CN" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Xinzhe Li</title>
-  <meta name="description" content="Xinzhe Li — Postdoctoral Research Fellow at RMIT University. LLM multi-trajectory reasoning: test-time methods including tree search, and closing the loop into training.">
+  <title>Xinzhe Li | 个人主页</title>
+  <meta name="description" content="Xinzhe Li，RMIT University 博士后研究员。研究方向包括大语言模型多轨迹推理、测试时搜索，以及将推理轨迹反馈到训练。">
   <meta name="author" content="Xinzhe Li">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   <header class="site-header">
-    <nav class="nav" aria-label="Primary">
+    <nav class="nav" aria-label="主导航">
       <a class="nav-brand" href="#top">Xinzhe Li</a>
       <ul class="nav-links">
-        <li><a href="#research">Research</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#teaching">Teaching</a></li>
-        <li><a href="#service">Service</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#research">研究方向</a></li>
+        <li><a href="#news">动态</a></li>
+        <li><a href="#publications">论文</a></li>
+        <li><a href="#teaching">教学</a></li>
+        <li><a href="#service">服务</a></li>
+        <li><a href="#contact">联系</a></li>
       </ul>
       <div class="nav-actions">
-        <div class="language-toggle" aria-label="Language">
-          <span aria-current="page">EN</span>
-          <a href="index.zh.html" hreflang="zh-CN" lang="zh-CN">中文</a>
+        <div class="language-toggle" aria-label="语言">
+          <a href="index.html" hreflang="en" lang="en">EN</a>
+          <span aria-current="page">中文</span>
         </div>
-        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="切换深色模式" title="切换深色模式">🌙</button>
       </div>
     </nav>
   </header>
@@ -37,61 +37,59 @@
         <img class="avatar" src="assets/img/avatar.png" alt="Xinzhe Li" width="150" height="150">
         <div>
           <h1 id="hero-name">Xinzhe Li</h1>
-          <p class="hero-role">Postdoctoral Research Fellow, RMIT University</p>
+          <p class="hero-role">RMIT University 博士后研究员</p>
         </div>
       </div>
       <p class="hero-bio">
-        I am a Postdoctoral Research Fellow at RMIT University and hold a PhD in
-        Information Technology from Deakin University. My research centers on
-        large language model (LLM) multi-trajectory reasoning — how models explore and
-        aggregate multiple reasoning paths at test time (including tree search), and how to
-        close the loop by folding such trajectories back into training. I have first-author
-        publications at ACL, TMLR, COLING, and IJCAI.
+        我目前是 RMIT University 的博士后研究员，并于 Deakin University 获得
+        信息技术博士学位。我的研究聚焦于大语言模型（LLM）的多轨迹推理：
+        模型如何在测试时探索并聚合多条推理路径（包括树搜索），以及如何将
+        这些推理轨迹反馈到训练过程，形成推理与学习之间的闭环。我的第一作者
+        论文发表于 ACL、TMLR、COLING 和 IJCAI。
       </p>
     </section>
 
     <section id="research" aria-labelledby="research-h">
-      <h2 id="research-h">Research Interests</h2>
+      <h2 id="research-h">研究方向</h2>
       <ul class="research-list">
-        <li><strong>Inference-time multi-trajectory reasoning.</strong> How LLMs explore and
-          aggregate multiple reasoning paths at test time — including tree search — while
-          maintaining both effectiveness and efficiency.
+        <li><strong>测试时多轨迹推理。</strong> 研究 LLM 如何在测试阶段探索并
+          聚合多条推理路径，包括树搜索方法，同时兼顾效果与效率。
           <ul>
-            <li><strong>Adaptive branching.</strong> Deciding <em>when</em> to branch
-              during search rather than expanding at every step, substantially reducing
-              compute with little or no loss in accuracy.</li>
-            <li><strong>Cross-trajectory agent memory.</strong> Transferring useful
-              knowledge across reasoning attempts for tool-use agents, organized along the
-              scope of transfer and the abstraction of content.</li>
+            <li><strong>自适应分支。</strong> 判断搜索过程中应在<em>何时</em>
+              分支，而不是在每一步都扩展，从而显著降低计算开销，并尽量保持
+              准确率。</li>
+            <li><strong>跨轨迹智能体记忆。</strong> 面向工具使用型智能体，在
+              多次推理尝试之间迁移有用知识，并从迁移范围与内容抽象层级两个
+              维度组织这些记忆。</li>
           </ul>
         </li>
-        <li><strong>Training-time: closing the loop between inference and learning.</strong> Folding
-          search- and memory-generated trajectories back into training. <em>(emerging direction)</em></li>
+        <li><strong>训练时：连接推理与学习。</strong> 将搜索和记忆生成的轨迹
+          反馈到训练中。<em>（新兴研究方向）</em></li>
       </ul>
     </section>
 
     <section id="news" aria-labelledby="news-h">
-      <h2 id="news-h">News</h2>
+      <h2 id="news-h">动态</h2>
       <div class="news-box">
         <ul class="news-list">
-          <li><span class="news-date">May 2026</span> Two papers accepted at ACL 2026: <em>LiTS</em> (Demo) and <em>Chain-in-Tree</em> (Findings).</li>
-          <li><span class="news-date">Oct 2025</span> Joined RMIT University as a Postdoctoral Research Fellow.</li>
-          <li><span class="news-date">Apr 2025</span> Survey on LLM test-time compute via search accepted at TMLR.</li>
-          <li><span class="news-date">Mar 2025</span> Completed PhD in Information Technology at Deakin University.</li>
-          <li><span class="news-date">Jan 2025</span> Review of LLM-based agent paradigms presented at COLING 2025.</li>
+          <li><span class="news-date">2026 年 5 月</span> 两篇论文被 ACL 2026 接收：<em>LiTS</em>（Demo）和 <em>Chain-in-Tree</em>（Findings）。</li>
+          <li><span class="news-date">2025 年 10 月</span> 入职 RMIT University，担任博士后研究员。</li>
+          <li><span class="news-date">2025 年 4 月</span> 关于 LLM 测试时搜索计算的综述论文被 TMLR 接收。</li>
+          <li><span class="news-date">2025 年 3 月</span> 于 Deakin University 完成信息技术博士学位。</li>
+          <li><span class="news-date">2025 年 1 月</span> 关于 LLM 智能体主要范式的综述论文发表于 COLING 2025。</li>
         </ul>
       </div>
     </section>
 
     <section id="publications" aria-labelledby="pub-h">
-      <h2 id="pub-h">Publications</h2>
-      <p class="pub-note">All as first author.</p>
+      <h2 id="pub-h">论文</h2>
+      <p class="pub-note">以下均为第一作者论文。</p>
       <!-- publications:start -->
       <ul class="pub-list">
         <li>
           <span class="pub-title">When Does Memory Help Multi-Trajectory Inference for Tool-Use LLM Agents?</span>
           <span class="pub-authors"><strong>Xinzhe Li</strong>, Yaguang Tao</span>
-          <span class="pub-venue badge-review">Under review</span>
+          <span class="pub-venue badge-review">审稿中</span>
           <span class="pub-links"><a href="https://arxiv.org/abs/2605.28224">arXiv</a> · <a href="https://github.com/xinzhel/lits-llm">code</a></span>
         </li>
         <li>
@@ -145,7 +143,7 @@
         <li>
           <span class="pub-title">GRAMMAR: Grounded and Modular Methodology for Assessment of Closed-Domain Retrieval-Augmented Language Model</span>
           <span class="pub-authors"><strong>Xinzhe Li</strong>, Ming Liu, Shang Gao</span>
-          <span class="pub-venue badge-review">Preprint</span>
+          <span class="pub-venue badge-review">预印本</span>
           <span class="pub-links"><a href="https://arxiv.org/abs/2404.19232">arXiv</a> · <a href="https://github.com/xinzhel/grammar">code</a></span>
         </li>
       </ul>
@@ -153,7 +151,7 @@
     </section>
 
     <section id="teaching" aria-labelledby="teach-h">
-      <h2 id="teach-h">Teaching</h2>
+      <h2 id="teach-h">教学</h2>
       <ul class="teach-list">
         <li><span class="teach-date">2023–2025</span> SIT720 Machine Learning, Deakin University</li>
         <li><span class="teach-date">2024</span> SIT744 Deep Learning, Deakin University</li>
@@ -161,12 +159,12 @@
     </section>
 
     <section id="service" aria-labelledby="service-h">
-      <h2 id="service-h">Academic Service</h2>
+      <h2 id="service-h">学术服务</h2>
       <p>Program Committee Member / Reviewer: NeurIPS (2026), IJCAI (2024, 2025), COLING (2025).</p>
     </section>
 
     <section id="contact" aria-labelledby="contact-h">
-      <h2 id="contact-h">Contact</h2>
+      <h2 id="contact-h">联系</h2>
       <p>
         <a href="https://scholar.google.com.au/citations?user=GzoezEUAAAAJ&hl=en">Google Scholar</a> ·
         <a href="https://github.com/xinzhel">GitHub</a> ·

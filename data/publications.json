@@ -1,0 +1,188 @@
+[
+  {
+    "title": "When Does Memory Help Multi-Trajectory Inference for Tool-Use LLM Agents?",
+    "authors": ["Xinzhe Li", "Yaguang Tao"],
+    "venue": {
+      "en": "Under review",
+      "zh": "审稿中"
+    },
+    "badge_class": "badge-review",
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2605.28224"
+      },
+      {
+        "label": "code",
+        "url": "https://github.com/xinzhel/lits-llm"
+      }
+    ]
+  },
+  {
+    "title": "LiTS: A Modular Framework for LLM Tree Search",
+    "authors": ["Xinzhe Li", "Yaguang Tao"],
+    "venue": {
+      "en": "ACL Demo 2026",
+      "zh": "ACL Demo 2026"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2603.00631"
+      },
+      {
+        "label": "code",
+        "url": "https://github.com/xinzhel/lits-llm"
+      }
+    ]
+  },
+  {
+    "title": "Chain-in-Tree: Back to Sequential Reasoning in LLM Tree Search",
+    "authors": ["Xinzhe Li"],
+    "venue": {
+      "en": "ACL 2026 Findings",
+      "zh": "ACL 2026 Findings"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2509.25835"
+      },
+      {
+        "label": "code",
+        "url": "https://github.com/xinzhel/chain_in_tree"
+      }
+    ]
+  },
+  {
+    "title": "A Survey on LLM Test-Time Compute via Search: Tasks, LLM Profiling, Search Algorithms, and Relevant Frameworks",
+    "authors": ["Xinzhe Li"],
+    "venue": {
+      "en": "TMLR 2025",
+      "zh": "TMLR 2025"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2501.10069"
+      },
+      {
+        "label": "code",
+        "url": "https://github.com/xinzhel/LLM-Search"
+      }
+    ]
+  },
+  {
+    "title": "A Review of Prominent Paradigms for LLM-Based Agents: Tool Use (Including RAG), Planning, and Feedback Learning",
+    "authors": ["Xinzhe Li"],
+    "venue": {
+      "en": "COLING 2025",
+      "zh": "COLING 2025"
+    },
+    "links": [
+      {
+        "label": "paper",
+        "url": "https://aclanthology.org/2025.coling-main.652/"
+      },
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2406.05804"
+      },
+      {
+        "label": "code",
+        "url": "https://github.com/xinzhel/LLM-Agent-Survey"
+      }
+    ]
+  },
+  {
+    "title": "A Survey on Out-Of-Distribution Evaluation of Neural NLP Models",
+    "authors": ["Xinzhe Li", "Ming Liu", "Shang Gao", "Wray Buntine"],
+    "venue": {
+      "en": "IJCAI 2023",
+      "zh": "IJCAI 2023"
+    },
+    "links": [
+      {
+        "label": "paper",
+        "url": "https://www.ijcai.org/proceedings/2023/749"
+      },
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2306.15261"
+      }
+    ]
+  },
+  {
+    "title": "Can Pretrained Language Models Derive Correct Semantics from Corrupt Subwords under Noise?",
+    "authors": ["Xinzhe Li", "Ming Liu", "Shang Gao"],
+    "venue": {
+      "en": "ACL-SEM 2023",
+      "zh": "ACL-SEM 2023"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2306.15268"
+      },
+      {
+        "label": "code",
+        "url": "https://github.com/xinzhel/word_corruption"
+      }
+    ]
+  },
+  {
+    "title": "Make Text Unlearnable: Exploiting Effective Patterns to Protect Personal Data",
+    "authors": ["Xinzhe Li", "Ming Liu", "Shang Gao"],
+    "venue": {
+      "en": "ACL-TrustNLP 2023",
+      "zh": "ACL-TrustNLP 2023"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2307.00456"
+      },
+      {
+        "label": "code",
+        "url": "https://github.com/xinzhel/unlearnable_texts"
+      }
+    ]
+  },
+  {
+    "title": "Exploring the Vulnerability of Natural Language Processing Models via Universal Adversarial Texts",
+    "authors": ["Xinzhe Li", "Ming Liu", "Xingjun Ma", "Longxiang Gao"],
+    "venue": {
+      "en": "ALTA 2021",
+      "zh": "ALTA 2021"
+    },
+    "links": [
+      {
+        "label": "paper",
+        "url": "https://aclanthology.org/2021.alta-1.14/"
+      },
+      {
+        "label": "code",
+        "url": "https://github.com/xinzhel/attack_alta"
+      }
+    ]
+  },
+  {
+    "title": "GRAMMAR: Grounded and Modular Methodology for Assessment of Closed-Domain Retrieval-Augmented Language Model",
+    "authors": ["Xinzhe Li", "Ming Liu", "Shang Gao"],
+    "venue": {
+      "en": "Preprint",
+      "zh": "预印本"
+    },
+    "badge_class": "badge-review",
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2404.19232"
+      },
+      {
+        "label": "code",
+        "url": "https://github.com/xinzhel/grammar"
+      }
+    ]
+  }
+]
